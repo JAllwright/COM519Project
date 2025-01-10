@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb5cc484-ff44-46d3-8147-bc198777eb25" name="Changes" comment="done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/browse_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/browse_products.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/customer_portal.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/customer_portal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/inventory_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/inventory_management.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/manage_customers.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/manage_customers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/manage_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/manage_products.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/manage_staff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/manage_staff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/navigation_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/navigation_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/place_orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/place_orders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/staff_portal.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/staff_portal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/view_basket.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/view_basket.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/view_past_orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/view_past_orders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/product_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/media/product_images.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/encryption.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/encryption.py" afterDir="false" />
-    </list>
+    <list default="true" id="bb5cc484-ff44-46d3-8147-bc198777eb25" name="Changes" comment="done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +96,7 @@
       <workItem from="1736188117118" duration="4880000" />
       <workItem from="1736266472165" duration="16865000" />
       <workItem from="1736335259641" duration="33925000" />
-      <workItem from="1736430269189" duration="41975000" />
+      <workItem from="1736430269189" duration="42629000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <option name="closed" value="true" />
@@ -136,7 +119,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/COM519Project$view_basket.coverage" NAME="view_basket Coverage Results" MODIFIED="1736465697818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
     <SUITE FILE_PATH="coverage/COM519Project$manage_products.coverage" NAME="manage_products Coverage Results" MODIFIED="1736349635630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
-    <SUITE FILE_PATH="coverage/COM519Project$gui_sqlite.coverage" NAME="gui_sqlite Coverage Results" MODIFIED="1736198689110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/COM519Project$gui_sqlite.coverage" NAME="gui_sqlite Coverage Results" MODIFIED="1736512988707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/COM519Project$xml_utils.coverage" NAME="xml_utils Coverage Results" MODIFIED="1736375676959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xml" />
     <SUITE FILE_PATH="coverage/COM519Project$staff_portal.coverage" NAME="staff_portal Coverage Results" MODIFIED="1736269198488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
     <SUITE FILE_PATH="coverage/COM519Project$manage_staff.coverage" NAME="manage_staff Coverage Results" MODIFIED="1736435011679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
