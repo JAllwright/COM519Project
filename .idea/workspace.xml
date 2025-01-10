@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb5cc484-ff44-46d3-8147-bc198777eb25" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/COM519Project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom_xml_utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom_xml_utils/xml_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/autodatabase.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/browse_products.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/customer_portal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/inventory_management.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/manage_customers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/manage_products.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/manage_staff.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/navigation_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/place_orders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/staff_portal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/view_basket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/view_past_orders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui_sqlite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/product_images.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/encryption.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2qzPV9fb6QBZHiFQkaDOGfbe7tU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.browse_products.executor": "Run",
+    "Python.database.executor": "Run",
+    "Python.gui_sqlite.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.manage_products.executor": "Run",
+    "Python.manage_staff.executor": "Run",
+    "Python.staff_portal.executor": "Run",
+    "Python.view_basket.executor": "Run",
+    "Python.xml_utils.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\7he0n\PycharmProjects\COM519Project\database" />
+      <recent name="C:\Users\7he0n\PycharmProjects\COM519Project" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
+        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb5cc484-ff44-46d3-8147-bc198777eb25" name="Changes" comment="" />
+      <created>1735662452574</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735662452574</updated>
+      <workItem from="1735662453701" duration="2036000" />
+      <workItem from="1735664550084" duration="1537000" />
+      <workItem from="1736188117118" duration="4880000" />
+      <workItem from="1736266472165" duration="16865000" />
+      <workItem from="1736335259641" duration="33925000" />
+      <workItem from="1736430269189" duration="40350000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/COM519Project$view_basket.coverage" NAME="view_basket Coverage Results" MODIFIED="1736465697818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+    <SUITE FILE_PATH="coverage/COM519Project$manage_products.coverage" NAME="manage_products Coverage Results" MODIFIED="1736349635630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+    <SUITE FILE_PATH="coverage/COM519Project$gui_sqlite.coverage" NAME="gui_sqlite Coverage Results" MODIFIED="1736198689110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/COM519Project$xml_utils.coverage" NAME="xml_utils Coverage Results" MODIFIED="1736375676959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xml" />
+    <SUITE FILE_PATH="coverage/COM519Project$staff_portal.coverage" NAME="staff_portal Coverage Results" MODIFIED="1736269198488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+    <SUITE FILE_PATH="coverage/COM519Project$manage_staff.coverage" NAME="manage_staff Coverage Results" MODIFIED="1736435011679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+    <SUITE FILE_PATH="coverage/COM519Project$browse_products.coverage" NAME="browse_products Coverage Results" MODIFIED="1736456772703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+    <SUITE FILE_PATH="coverage/COM519Project$database.coverage" NAME="database Coverage Results" MODIFIED="1736472159691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/COM519Project$main.coverage" NAME="main Coverage Results" MODIFIED="1736491779039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
+  </component>
+</project>
