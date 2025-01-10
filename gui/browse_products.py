@@ -10,14 +10,13 @@ class BrowseProducts:
         self.parent = parent
         self.customer_id = customer_id
         self.navigation_manager = navigation_manager
-        self.branch_id = branch_id  # Directly use the customer's branch ID
-        self.basket = basket  # Pass the shared basket
+        self.branch_id = branch_id
+        self.basket = basket
         self.browse_window = Toplevel(self.parent)
         self.parent.withdraw()
         self.browse_window.title("Browse Products")
         self.browse_window.geometry("800x600")
 
-        # Skip branch selection and go directly to browsing products
         self.create_product_browsing()
 
     def create_product_browsing(self):
@@ -26,7 +25,6 @@ class BrowseProducts:
 
         Label(self.browse_window, text="Browse Products", font=("Arial", 16)).pack(pady=10)
 
-        # Filters and search
         filter_frame = tk.Frame(self.browse_window)
         filter_frame.pack(pady=10, padx=10, fill="x")
 
@@ -56,7 +54,6 @@ class BrowseProducts:
         except Exception as e:
             messagebox.showerror("Error", f"Failed to fetch categories: {e}")
 
-        # Product display area
         results_label = Label(self.browse_window, text="", font=("Arial", 12))
         results_label.pack(pady=10)
 
@@ -89,7 +86,7 @@ class BrowseProducts:
 
             try:
                 products = Database.fetch_available_products(
-                    branch_id=self.branch_id,  # Filter by the customer's branch
+                    branch_id=self.branch_id,
                     search=search,
                     category_id=category_id,
                     min_price=min_price,
@@ -156,11 +153,9 @@ class BrowseProducts:
         Button(quantity_window, text="Add", command=submit_quantity).pack(pady=10)
 
     def add_to_basket(self, product, quantity):
-        """Add a product to the in-memory basket and adjust stock."""
         product_id = product[0]
         branch_id = self.branch_id
 
-        # Check stock availability
         try:
             stock_quantity = Database.fetch_stock_quantity(branch_id, product_id)
             if stock_quantity < quantity:
@@ -170,18 +165,16 @@ class BrowseProducts:
             messagebox.showerror("Error", f"Failed to fetch stock: {e}")
             return
 
-        # Adjust stock in the database
         try:
-            Database.adjust_stock_quantity(branch_id, product_id, -quantity)  # Reduce stock
+            Database.adjust_stock_quantity(branch_id, product_id, -quantity)
         except Exception as e:
             messagebox.showerror("Error", f"Failed to update stock: {e}")
             return
 
-        # Update in-memory basket
         if product_id in self.basket:
             self.basket[product_id]['quantity'] += quantity
         else:
             self.basket[product_id] = {'product': product, 'quantity': quantity, 'branch': branch_id}
 
-        print(f"Basket after adding: {self.basket}")  # Debugging
+        print(f"Basket after adding: {self.basket}")
         messagebox.showinfo("Success", f"Added {quantity} of {product[1]} to basket.")

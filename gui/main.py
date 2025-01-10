@@ -14,7 +14,6 @@ class MainApplication:
         self.create_widgets()
 
     def create_widgets(self):
-        """Create widgets for the main application."""
         tk.Label(self.root, text="Main Application", font=("Arial", 16)).pack(pady=20)
 
         tk.Button(self.root, text="Customer Portal", command=self.open_customer_portal, width=20).pack(pady=10)
@@ -22,13 +21,11 @@ class MainApplication:
         tk.Button(self.root, text="Exit", command=self.root.quit, width=20).pack(pady=10)
 
     def open_customer_portal(self):
-        """Open the Customer Portal."""
         self.navigation_manager.navigate(
             self.root, lambda: CustomerPortal(self.root, self.navigation_manager)
         )
 
     def open_admin_portal(self):
-        """Open the Admin/Staff Portal."""
         self.navigation_manager.navigate(
             self.root, lambda: StaffPortal(self.root, self.navigation_manager)
         )

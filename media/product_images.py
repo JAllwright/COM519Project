@@ -5,7 +5,6 @@ import os
 class ProductImages:
     @staticmethod
     def save_image_to_database(product_id):
-        """Saves an image file as a BLOB in the Products table."""
         filepath = filedialog.askopenfilename(filetypes=[("Image Files", "*.jpg;*.png;*.jpeg")])
         if not filepath:
             messagebox.showwarning("Warning", "No file selected.")
@@ -29,7 +28,6 @@ class ProductImages:
 
     @staticmethod
     def retrieve_image_from_database(product_id, save_folder="media/product_images"):
-        """Retrieves an image file from the database and saves it locally."""
         conn = sqlite3.connect("database/autodatabase.db")
         conn.execute("PRAGMA foreign_keys = ON")
         cursor = conn.cursor()

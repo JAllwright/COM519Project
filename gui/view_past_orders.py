@@ -23,7 +23,6 @@ class ViewPastOrders:
         orders_table.pack(fill="both", expand=True, padx=10, pady=10)
 
         try:
-            # Fetch past orders for the customer
             orders = Database.fetch_past_orders(self.customer_id)
             for order in orders:
                 orders_table.insert("", "end", values=order)

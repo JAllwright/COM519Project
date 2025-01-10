@@ -8,11 +8,11 @@ from utils.database import Database
 class PlaceOrders:
     def __init__(self, parent, navigation_manager):
         self.parent = parent
-        self.navigation_manager = navigation_manager  # NavigationManager instance
+        self.navigation_manager = navigation_manager
         self.branch_id = None
         self.supplier_id = None
         self.place_orders_window = Toplevel(self.parent)
-        self.parent.withdraw()  # Hide the parent window
+        self.parent.withdraw()
         self.place_orders_window.title("Place Orders")
         self.place_orders_window.geometry("800x600")
         self.create_branch_and_supplier_selection()
@@ -23,7 +23,7 @@ class PlaceOrders:
         branch_var = StringVar()
         supplier_var = StringVar()
 
-        # Branch selection dropdown
+
         try:
             branches = Database.fetch_all_branches()
             if not branches:
@@ -38,7 +38,6 @@ class PlaceOrders:
             self.navigation_manager.back(self.place_orders_window)
             return
 
-        # Supplier selection dropdown
         try:
             suppliers = Database.fetch_all_suppliers()
             if not suppliers:
@@ -72,7 +71,6 @@ class PlaceOrders:
 
         Label(self.place_orders_window, text="Browse Products", font=("Arial", 16)).pack(pady=10)
 
-        # Filters and search
         filter_frame = tk.Frame(self.place_orders_window)
         filter_frame.pack(pady=10, padx=10, fill="x")
 
@@ -96,14 +94,12 @@ class PlaceOrders:
 
         Button(filter_frame, text="Apply Filters", command=lambda: populate_products_list()).grid(row=2, column=0, columnspan=4, pady=10)
 
-        # Populate categories in the dropdown
         try:
             categories = Database.fetch_all_categories()
-            category_dropdown["values"] = [category[1] for category in categories]  # Display category names
+            category_dropdown["values"] = [category[1] for category in categories]
         except Exception as e:
             messagebox.showerror("Error", f"Failed to fetch categories: {e}")
 
-        # Product display area
         results_label = Label(self.place_orders_window, text="", font=("Arial", 12))
         results_label.pack(pady=10)
 
@@ -136,7 +132,7 @@ class PlaceOrders:
 
             try:
                 products = Database.fetch_supplier_products(
-                    supplier_id=self.supplier_id,  # No branch_id passed
+                    supplier_id=self.supplier_id,
                     search=search,
                     category_id=category_id,
                     min_price=min_price,
@@ -149,13 +145,11 @@ class PlaceOrders:
                     product_frame = Frame(inner_frame, borderwidth=1, relief="solid", pady=10, padx=10)
                     product_frame.pack(fill="x", pady=5)
 
-                    # Display product image
 
-                    # Display product image
-                    if product[-1]:  # Assuming the last column is the image BLOB
+                    if product[-1]:
                         try:
-                            image_data = product[-1]  # BLOB data
-                            image = Image.open(io.BytesIO(image_data))  # Use BytesIO to read binary data
+                            image_data = product[-1]
+                            image = Image.open(io.BytesIO(image_data))
                             image.thumbnail((100, 100))
                             photo = ImageTk.PhotoImage(image)
                             image_label = Label(product_frame, image=photo)
@@ -165,11 +159,10 @@ class PlaceOrders:
                             print(f"Error displaying image: {e}")
                             Label(product_frame, text="No Image", font=("Arial", 10)).pack(side="left", padx=10)
 
-                    # Display product info
                     info_frame = Frame(product_frame)
                     info_frame.pack(side="left", fill="x", expand=True)
 
-                    Label(info_frame, text=product[1], font=("Arial", 14, "bold")).pack(anchor="w")  # Product name
+                    Label(info_frame, text=product[1], font=("Arial", 14, "bold")).pack(anchor="w")
                     Label(info_frame, text=f"Price: £{product[2]:.2f}", font=("Arial", 12)).pack(anchor="w")
                     Label(info_frame, text=f"ProductID: {product[0]} | CategoryID: {product[3]}",
                           font=("Arial", 10)).pack(anchor="w")
@@ -201,7 +194,6 @@ class PlaceOrders:
                         messagebox.showerror("Error", "Quantity must be a positive integer (1).")
                         return
 
-                    # Call the Database function to place the order
                     Database.place_order(
                         branch_id=self.branch_id,
                         supplier_id=self.supplier_id,

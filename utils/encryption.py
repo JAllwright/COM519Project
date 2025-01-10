@@ -14,7 +14,7 @@ def hash_password(password):
 
 def verify_password(stored_password, entered_password):
 
-    salt, hashed_password = stored_password.split(':')  # Extract salt and hash
+    salt, hashed_password = stored_password.split(':')
     salt = binascii.unhexlify(salt)
     hashed_entered_password = hashlib.pbkdf2_hmac(
         'sha256',

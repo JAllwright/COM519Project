@@ -4,31 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb5cc484-ff44-46d3-8147-bc198777eb25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/COM519Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_xml_utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom_xml_utils/xml_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/autodatabase.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/browse_products.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/customer_portal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/inventory_management.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/manage_customers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/manage_products.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/manage_staff.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/navigation_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/place_orders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/staff_portal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/view_basket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/view_past_orders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui_sqlite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/product_images.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/encryption.py" afterDir="false" />
+    <list default="true" id="bb5cc484-ff44-46d3-8147-bc198777eb25" name="Changes" comment="done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/browse_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/browse_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/customer_portal.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/customer_portal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/inventory_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/inventory_management.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/manage_customers.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/manage_customers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/manage_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/manage_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/manage_staff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/manage_staff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/navigation_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/navigation_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/place_orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/place_orders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/staff_portal.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/staff_portal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/view_basket.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/view_basket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/view_past_orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/view_past_orders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/product_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/media/product_images.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/encryption.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/encryption.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +37,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "JAllwright"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JAllwright/COM519Project.git",
+    "accountId": "3f85390b-d200-4743-bfc6-c023447a5a1a"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -109,12 +113,25 @@
       <workItem from="1736188117118" duration="4880000" />
       <workItem from="1736266472165" duration="16865000" />
       <workItem from="1736335259641" duration="33925000" />
-      <workItem from="1736430269189" duration="40350000" />
+      <workItem from="1736430269189" duration="41975000" />
     </task>
+    <task id="LOCAL-00001" summary="done">
+      <option name="closed" value="true" />
+      <created>1736492838405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736492838405</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/COM519Project$view_basket.coverage" NAME="view_basket Coverage Results" MODIFIED="1736465697818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />

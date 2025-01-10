@@ -19,7 +19,6 @@ class CustomerPortal:
         self.create_login_screen()
 
     def create_login_screen(self):
-        """Create the login/signup screen."""
         for widget in self.customer_portal_window.winfo_children():
             widget.destroy()
 
@@ -30,7 +29,6 @@ class CustomerPortal:
         Button(self.customer_portal_window, text="Back", command=self.back_to_main).pack(pady=10)
 
     def create_dashboard(self, customer):
-        """Create the customer dashboard after successful login."""
         for widget in self.customer_portal_window.winfo_children():
             widget.destroy()
 
@@ -55,7 +53,7 @@ class CustomerPortal:
                    self.customer_portal_window,
                    self.basket,
                    self.navigation_manager,
-                   customer["CustomerID"]  # Pass the customer ID here
+                   customer["CustomerID"]
                )).pack(pady=10)
 
         Button(self.customer_portal_window, text="Browse Products",
@@ -66,46 +64,41 @@ class CustomerPortal:
                    customer["CustomerID"],
                    self.navigation_manager,
                    self.basket,
-                   customer["BranchID"]  # Pass the customer’s BranchID
+                   customer["BranchID"]
                )).pack(pady=10)
 
         Button(self.customer_portal_window, text="Logout", command=self.logout_user).pack(pady=10)
 
     def logout_user(self):
-        """Handle user logout and reinstate stock for unpurchased basket items."""
         try:
             print(f"Basket at logout: {self.basket}")
             for product_id, item in self.basket.items():
                 print(f"Processing ProductID={product_id}, Item={item}")
                 quantity = item['quantity']
-                branch_id = item['branch']  # Correctly interpret 'branch' as BranchID
+                branch_id = item['branch']
 
-                # Ensure branch_id is valid
                 if not isinstance(branch_id, int):
                     print(f"Invalid BranchID for product {product_id}: {branch_id}")
                     messagebox.showwarning("Warning",
                                            f"Invalid branch for product {product_id}. Skipping stock adjustment.")
                     continue
 
-                # Adjust stock in the database
                 try:
                     Database.adjust_stock_quantity(branch_id, product_id, quantity)
                 except Exception as e:
                     print(f"Error adjusting stock for ProductID={product_id}, BranchID={branch_id}: {e}")
                     messagebox.showerror("Error", f"Failed to adjust stock for product {product_id}")
-                    return  # Stop logout if adjustment fails
+                    return
 
-            # Clear the in-memory basket after successful stock reinstatement
             self.basket.clear()
             messagebox.showinfo("Success", "You have been logged out and stock reinstated.")
         except Exception as e:
             print(f"Error during logout: {e}")
             messagebox.showerror("Error", f"Failed to log out properly: {e}")
         finally:
-            self.create_login_screen()  # Navigate back to the login screen
+            self.create_login_screen()
 
     def open_login(self):
-        """Open the login screen."""
         login_window = Toplevel(self.customer_portal_window)
         self.customer_portal_window.withdraw()
         login_window.title("Customer Login")
@@ -142,7 +135,6 @@ class CustomerPortal:
         Button(login_window, text="Back", command=lambda: self.back_to_customer_portal(login_window)).pack(pady=10)
 
     def open_signup(self):
-        """Open the signup screen."""
         signup_window = Toplevel(self.customer_portal_window)
         self.customer_portal_window.withdraw()
         signup_window.title("Sign Up")
@@ -162,20 +154,18 @@ class CustomerPortal:
         membership_dropdown = tk.OptionMenu(signup_window, membership_level_var, "1", "2")
         membership_dropdown.pack(pady=5)
 
-        # Branch Selection
         Label(signup_window, text="Branch").pack(pady=5)
         branch_var = StringVar()
-        branches = Database.fetch_all_branches()  # Fetch branches as "BranchID - Location"
+        branches = Database.fetch_all_branches()
         branch_dropdown = ttk.Combobox(signup_window, textvariable=branch_var, values=branches, state="readonly")
         branch_dropdown.pack(pady=5)
 
         def validate_and_format_name(name):
-            """Validate the name and capitalise properly."""
-            if not re.match(r"^[a-zA-Z- ]+$", name):  # Allow letters, spaces, and hyphens
+            if not re.match(r"^[a-zA-Z- ]+$", name):
                 return None
             return " ".join(
                 part.capitalize()
-                for part in re.split(r"(-| )", name.lower())  # Split by spaces or hyphens
+                for part in re.split(r"(-| )", name.lower())
             )
 
         def validate_email(email):
@@ -236,10 +226,8 @@ class CustomerPortal:
         Button(signup_window, text="Back", command=lambda: self.back_to_customer_portal(signup_window)).pack(pady=10)
 
     def back_to_customer_portal(self, window):
-        """Navigate back to the customer portal."""
         window.destroy()
         self.customer_portal_window.deiconify()
 
     def back_to_main(self):
-        """Navigate back to the main screen."""
         self.navigation_manager.back(self.customer_portal_window)

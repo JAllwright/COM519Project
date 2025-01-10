@@ -14,9 +14,9 @@ from utils.encryption import verify_password
 class StaffPortal:
     def __init__(self, parent, navigation_manager):
         self.parent = parent
-        self.navigation_manager = navigation_manager  # NavigationManager instance
+        self.navigation_manager = navigation_manager
         self.staff_portal_window = Toplevel(self.parent)
-        self.parent.withdraw()  # Hide the parent window
+        self.parent.withdraw()
         self.staff_portal_window.title("Staff Portal")
         self.staff_portal_window.geometry("400x300")
         self.create_widgets()
@@ -29,25 +29,23 @@ class StaffPortal:
                command=lambda: self.navigation_manager.back(self.staff_portal_window), width=20).pack(pady=10)
 
     def login(self):
-        """Display the login form and handle authentication."""
         self.navigation_manager.navigate(
             self.staff_portal_window,
             lambda: AdminLogin(self.staff_portal_window, self.navigation_manager)
         )
 
     def open_portal_by_role(self, job_role_id):
-        """Open a portal based on the user's role."""
-        if job_role_id == 1:  # Manager Role
+        if job_role_id == 1:
             self.navigation_manager.navigate(
                 self.staff_portal_window,
                 lambda: ManagerPortal(self.staff_portal_window, self.navigation_manager)
             )
-        elif job_role_id == 2:  # Associate Role
+        elif job_role_id == 2:
             self.navigation_manager.navigate(
                 self.staff_portal_window,
                 lambda: AssociatePortal(self.staff_portal_window, self.navigation_manager)
             )
-        elif job_role_id == 3:  # Cleaner Role
+        elif job_role_id == 3:
             self.navigation_manager.navigate(
                 self.staff_portal_window,
                 lambda: CleanerPortal(self.staff_portal_window, self.navigation_manager)
@@ -65,7 +63,6 @@ class AdminLogin:
         self.login_window.title("Admin Login")
         self.login_window.geometry("300x200")
 
-        # Variables to hold input values
         self.employee_id_var = StringVar()
         self.password_var = StringVar()
 
@@ -81,10 +78,8 @@ class AdminLogin:
         Button(self.login_window, text="Back",
                command=lambda: self.navigation_manager.back(self.login_window)).pack(pady=10)
 
-      # Import the password verification function
 
     def authenticate_user(self):
-        """Check the entered credentials against the database."""
         employee_id = self.employee_id_var.get().strip()
         password = self.password_var.get().strip()
 
@@ -99,7 +94,6 @@ class AdminLogin:
             conn.execute("PRAGMA foreign_keys = ON")
             cursor = conn.cursor()
 
-            # Fetch user credentials based on EmployeeID
             cursor.execute("""
                 SELECT JobRoleID, Password
                 FROM Employees
@@ -109,8 +103,7 @@ class AdminLogin:
 
             if result:
                 job_role_id, stored_password = result
-                # Compare the entered password with the hashed password
-                if verify_password(stored_password, password):  # Use the verify_password function
+                if verify_password(stored_password, password):
                     self.navigation_manager.navigate(
                         self.login_window,
                         lambda: StaffPortal(self.parent, self.navigation_manager).open_portal_by_role(job_role_id)
@@ -212,7 +205,6 @@ class CleanerPortal:
     def create_widgets(self):
         Label(self.cleaner_window, text="Cleaner Portal", font=("Arial", 16)).pack(pady=20)
 
-        # Add limited dashboard view functionality here
         Button(self.cleaner_window, text="View System Dashboard",
                command=lambda: self.view_dashboard()).pack(pady=10)
 
@@ -220,5 +212,4 @@ class CleanerPortal:
                command=lambda: self.navigation_manager.back(self.cleaner_window)).pack(pady=10)
 
     def view_dashboard(self):
-        """View system statistics."""
         messagebox.showinfo("System Dashboard", "This will display system statistics.")
